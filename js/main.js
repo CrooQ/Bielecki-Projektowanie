@@ -40,4 +40,16 @@
         $('#preloader').delay(2000).fadeOut(3000); // zanikanie warstwy zakrywającej stronę
         $('body').delay(2800).css({'overflow':'visible'}); // dopóki #preloader jest widoczny nie ma możliwości przewijania strony
     
+    
+    /*-------------------------------*/
+    /*     Responsive Image-Map      */
+    /*-------------------------------*/
+    
+        $('img[usemap]').rwdImageMaps(); //resopnsywność pól mapy
+    
+        $('.map-garage').on('click', function(){
+            console.log('działa');
+        })
+    
+    
 }(jQuery);

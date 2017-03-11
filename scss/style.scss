@@ -30,10 +30,54 @@ html {
     }
 }
 
+
+/*-------------------------------*/
+/*           Preloader           */
+/*-------------------------------*/
+
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background: #f2f3f4;
+    z-index:999;
+}
+
+#preloader-logo {
+    width:500px;
+    height:500px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    background-image:url(../images/logo/logo-alierons.png);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: contain;
+    margin:-250px 0 0 -250px;
+}
+
 /*---------------------------------------------------------------*/
 /*                              HEADER                           */
 /*---------------------------------------------------------------*/
 
+header {
+    background-image: url(../Images/pic01_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.header-logo {
+    
+    img {
+        float: right;
+        width: 25%;
+        height: 20%;
+        padding-right: 25px;
+    }
+}
 
 /*-------------------------------*/
 /*           Wrappers            */
@@ -283,29 +327,15 @@ html {
 }
 
 /*-------------------------------*/
-/*           Preloader           */
+/*          Image-Map            */
 /*-------------------------------*/
 
-#preloader {
-    position:fixed;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    background: #f2f3f4;
-    z-index:999;
+.image-map{
+    
+    width: 70%;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+    
 }
-
-#preloader-logo {
-    width:500px;
-    height:500px;
-    position:absolute;
-    left:50%;
-    top:50%;
-    background-image:url(../images/logo/logo-alierons.png);
-    background-repeat:no-repeat;
-    background-position:center;
-    background-size: contain;
-    margin:-250px 0 0 -250px;
-}
-

@@ -13,3 +13,6 @@ Strona dla firmy BIELECKI - Pracownia projektowa
 
 Drugi projekt non-profit. Tym razem strona tworzona będzie na WordPress.
 
+#### Tymczasowy link do podglądu strony
+
+[Podgląd](http://bielecki.uzit.pl/)

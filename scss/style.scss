@@ -7,9 +7,9 @@
 
 
 body {
-    position: relative;
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
+    margin: 0;
 }
 body,
 html {
@@ -17,18 +17,6 @@ html {
     background-color: $bg-color;
 }
 
-
-.nav {
-    .open>a {
-        background-color: transparent;
-        &:hover {
-            background-color: transparent;
-        }
-        &:focus {
-            background-color: transparent;
-        }
-    }
-}
 
 
 /*---------------------------------------------------------------*/
@@ -58,6 +46,7 @@ header {
 
 .navbar-default{
     background: rgba(255, 255, 255, 0.7);
+    
 }
 
 
@@ -122,8 +111,41 @@ header {
     margin:-250px 0 0 -250px;
 
 }
-
-
 /*-------------------------------*/
 /*          Image-Map            */
 /*-------------------------------*/
+
+
+
+/*---------------------------------------------------------------*/
+/*                            SECTIONS                           */
+/*---------------------------------------------------------------*/
+
+section.image, header.image{
+    position: relative;
+    min-height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+   
+}
+
+.section-img1, .section-img2, .section-img3{
+    opacity: 0.6;
+    background-color: rgb(214, 212, 212);
+}
+
+.section-img1{
+    
+    background-image: url(../images/blueprint-for-building-a-house-blueprintbg.jpg); 
+
+}
+
+.section-img2{
+    background-image: url(../images/pexels-photo-239886.jpeg);
+}
+
+.section-img3{
+    background-image: url(../images/StockSnap_42H3JH8QI5.jpg);
+}

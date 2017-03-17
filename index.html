@@ -10,103 +10,201 @@
         <meta name='description' content='' />
         <meta name='keywords' content='' />
 
-        <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
         <link rel='stylesheet' href='css/style.css'>
-
+        <link href="css/scrolling-nav.css" rel="stylesheet">
+        
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
 
     </head>
-    <body>
-    
+    <body id='page-top' data-spy='scroll' data-target='.navbar-fixed-top'>
+        
         <header>
-            
-            <div class='container'>
-                <div class='row'>
-                    <div id='wrapper'>
-                        <div class='overlay'></div>
+            <!-- Navigation -->
+            <nav class='navbar navbar-default navbar-fixed-top' role='navigation'>
 
-                        <!-- Sidebar -->
-                        <nav class='navbar navbar-inverse navbar-fixed-top' id='sidebar-wrapper' role='navigation'>
-                            <ul class='nav sidebar-nav'>
-                                <p class='sidebar-brand'>
-                                        MENU
-                                </p>
-                                <li>
-                                    <a href='#'><i class=''></i> Top</a>
-                                </li>
-                                <li>
-                                    <a href='#'><i class=''></i> O nas</a>
-                                </li>
-                                <li>
-                                    <a href='#'><i class=''></i> Oferta</a>
-                                </li>
-                                <li>
-                                    <a href='#'><i class=''></i> Kontakt</a>
-                                </li>
+                <div class='container'>
 
-                            </ul>
-                        </nav>
-                        <!-- End #sidebar-wrapper -->
-                        <div class='row header-logo'>
-                            <img src='Images/LOGO/logo-alierons.png'>
-                        </div>
-                        <!-- Hamburger -->
-                        <div id='page-content-wrapper'>
-                            <button type='button' class='hamburger is-closed animated fadeInLeft' data-toggle='offcanvas'>
-                                <span class='hamb-top'></span>
-                                <span class='hamb-middle'></span>
-                                <span class='hamb-bottom'></span>
-                            </button>    
-                        </div>
-                        <!-- End #page-content-wrapper -->
-
-
-                        <!-- Image map -->
-
-
-                        <img class='col-lg-12 img-responsive image-map' src='Images/plan1.png' alt='Image-Map' usemap='#Map' />
-                        
-                        <map name='Map' id='Map'>
-                            <area class='map-garage' alt='Garage' title='Garage' href='#' shape='poly' coords="372,510,136,731,217,802,100,918,404,1175,760,798" />
-                            <area alt='' title='' href='#' shape='poly' coords='468,1111,656,1257,965,902,785,771' />
-                            <area alt='' title='' href='#' shape='poly' coords='712,1194,1057,1467,1314,1146,968,906' />
-                            <area alt='' title='' href='#' shape='poly' coords='1316,1143,1638,734,1458,614,1332,759,1098,741,962,899' />
-                            <area alt='' title='' href='#' shape='poly' coords='960,897,1094,741,1330,757,1460,609,1506,565,1124,322,1084,372,1142,419,990,580,852,489,798,534,972,654,834,801' />
-                            <area alt='' title='' href='#' shape='poly' coords='968,655,624,411,458,570,756,794,780,770,834,803' />
-                            <area alt='' title='' href='#' shape='poly' coords='626,410,796,530,854,486,962,374,882,315,927,273,836,210' />
-                            <area alt='' title='' href='#' shape='poly' coords='1139,419,1078,373,1010,329,854,489,989,577' />
-                            <area alt='' title='' href='#' shape='poly' coords='964,374,1008,326,1077,367,1081,369,1121,322,1312,440,1509,222,1159,8,1049,116,974,69,836,207,927,271,885,314' />
-                        
-                        </map>
-
+                    <!-- Hamburger -->
+                    <div class='navbar-header page-scroll'>
+                        <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-ex1-collapse'>
+                            <span class='icon-bar'></span>
+                            <span class='icon-bar'></span>
+                            <span class='icon-bar'></span>
+                        </button>
                     </div>
-                    <!-- End #wrapper -->
+                    <!-- End hamburger -->
+
+                    <!-- Menu -->
+                    <div class='collapse navbar-collapse navbar-ex1-collapse'>
+                        <ul class='nav navbar-nav'>
+                            <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                            <li class='hidden'>
+                                <a class='page-scroll' href='#page-top'></a>
+                            </li>
+                            <li>
+                                <a class='page-scroll' href='#o-nas'>O nas</a>
+                            </li>
+                            <li>
+                                <a class='page-scroll' href='#oferta'>Oferta</a>
+                            </li>
+                            <li>
+                                <a class='page-scroll' href='#realizacje'>Realizacje</a>
+                            </li>
+                            <li>
+                                <a class='page-scroll' href='#kontakt'>Kontakt</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End menu -->
+                </div>
+                <!-- End container -->
+            </nav>
+           
+            <div class='header-logo'>
+                <img class='img-responsive' src='images/logo/logo-alierons.png'>
+            </div>
+            
+            
+            
+            <!-- Hamburger -->
+            <div id='page-content-wrapper'>
+                  
+            </div>
+            <!-- End #page-content-wrapper -->
+            
+            
+            
+        </header>
+        
+        <!-- O nas -->
+        <section id='o-nas' class='o-nas-section'>
+           
+            <div id='preloader'>
+
+                <div id='preloader-logo'></div>
+
+            </div> 
+            <!-- End #preloader -->
+            
+            <div class='container'> 
+            <!-- Conainer O nas -->
+                
+                <div class='row'>
+                    
+                    <h1 class='page-header'>O Nas</h1>
+                    
+                    <h3>Tworzymy profesjonalne projekty w oparciu o najnowsze rozwiązania i trendy w architekturze.</h3>
+
+                    <p>Każdy projekt jest dla nas nowym wyzwaniem. Zawsze staramy się połączyć wizję inwestora, funkcjonalności oraz piękno, w spójną całość.</p>
+                    
+                    <p>Projektowanie wymaga właściwego zrozumienia potrzeb klienta i indywidualnego podejścia do każdego zagadnienia. Nasza wiedza i doświadczenie pozwoli Państwu zamienić wizję w rzeczywistość.</p> 
+                        
+                    <p>Z pośród wielu rozwiązań dostępnych na rynku wybieramy tylko te, które w pełni będą odzwierciedlać Państwa oczekiwania i wytrzymają próbę czasu. Profesjonalny projekt pozwala na dostosowanie każdego elementu do Państwa indywidualnych potrzeb.</p>
+                        
+                    <h4>Dobrze wykonany i zrealizowany projekt to nasza największa satysfakcja.</h4>
+
+                    <h3>Zapraszam do zapoznania się z dotychczasowymi realizacjami.</h3>
+                    
+                    
+                </div> 
+                <!-- End row -->
+                
+            </div> 
+            <!-- End conainer O nas -->
+            
+        </section>
+        
+        <!-- Oferta -->
+        <section id='oferta' cass='oferta-section'>
+
+            <div class='container'> 
+               <!-- Conainer Oferta -->
+                <div class='row'>
+                    <div class='col-lg-8 col-lg-offset-2'>
+                        <h1 class='page-header'>Oferta</h1>
+                    </div>
+                    
                 </div>    
+                
+                <div class='row'>
+                    <p>Powierzone nam projekty prowadzimy płynnie i skutecznie, aż do oddania obiektu do użytkowania. Począwszy od fazy koncepcyjno-programowej każdej inwestycji zawierającej pomysł i analizę kosztów realizacji, poprzez wykonanie projektu budowlanego z wszystkimi niezbędnymi warunkami, uzgodnieniami, pozwoleniami, następnie wykonanie projektu przetargowego i wykonawczego budynku wraz z jego wnętrzami i otoczeniem, aż po nadzory autorskie i branżowe na budowie oraz przy wykańczaniu wnętrz. Członkowie naszego wielobranżowego zespołu posiadają komplet uprawnień budowlanych zarówno w zakresie projektowania jak i kierowania robotami budowlanymi dzięki czemu sami możemy nadzorować nasze projekty aż do zakończenia budowy. </p>
+
+                    <h3> W zakresie architektury oferujemy Państwu:</h3>
+
+                    <h4>INDYWIDUALNE PROJEKTY ARCHITEKTONICZNO-BUDOWLANE:</h4>
+                    <ul>
+                        <li>budynków mieszkalnych (jednorodzinne i wielorodzinne)</li>
+                        <li>rezydencji mieszkalnych</li>
+                        <li>budynków użyteczności publicznej</li>
+                        <li>obiektów przemysłowych</li>
+                        <li>budynków ochrony zdrowia</li>
+                        <li>hal  magazynowych, produkcyjnych, handlowych</li>
+                        <li> budynków zagrodowych / rolniczych</li>
+                        <li>rewaloryzacji / adaptacji budynków zabytkowych
+                        wnętrz</li>
+                    </ul>
+                    
+                    <h4>Pomagamy przy pozyskaniu dokumentów i opracowań niezbędnych do rozpoczęcia prac projektowych takich jak:</h4>
+                    <ul>
+                            
+                        <li>Wypis i Wyrys z Miejscowego Planu Zagospodarowania Przestrzennego 
+                            (lub Warunki Techniczne Zabudowy)</li>
+                        <li>Mapa do celów projektowych</li>
+                        <li>Badania Geotechniczne Gruntu</li>
+                        <li>Warunki Gestorów Sieci 
+                            (woda, kanalizacja, odprowadzenie wód deszczowych, energetyka)</li>
+                        <li>Warunki Zjazdu na Drogę</li>
+                        <li>Decyzja Środowiskowa (Raport Oddziaływania na Środowisko)</li>
+                        <li>Świadectwo Energetyczne Obiektu</li>
+                    </ul>
+                </div>
+                
                 <!-- End row -->
             </div>
             <!-- End container -->
-        </header>
-        
-        <section>
-           
-            <div id='preloader'>
-                
-                <div id='preloader-logo'></div>
-                
-            </div>
 
-            <div class='container'>
+        </section>
+        
+        <!-- Realizacje -->
+        <section id='realizacje' class='realizacje-section'>
+            
+            <div class='container'> 
+                <!-- Conainer O nas -->
+
                 <div class='row'>
-                    <div class='col-lg-8 col-lg-offset-2'>
-                        <h1 class='page-header'>Bielecki - Pracownia projektowa</h1>
-                    </div>
+
+                    <h1 class='page-header'>Realizacje</h1>
+                
                 </div>
+            
             </div>
             
         </section>
-    
-        <script src='js/bootstrap.js' type='text/javascript'></script>
+        
+        <!-- Kontakt -->
+        <section id='kontakt' class='kontakt-section'>
+            
+            <div class='container'> 
+                <!-- Conainer O nas -->
+
+                <div class='row'>
+
+                    <h1 class='page-header'>Kontakt</h1>
+
+                </div>
+
+            </div>
+            
+        </section>
+        
         <script src='js/main.js' type='text/javascript'></script>
-        <script src='js/jquery.rwdImageMaps.min.js' type='text/javascript'></script>
+        
+        <!-- Bootstrap Core JavaScript -->
+        <script src='js/bootstrap.min.js' type='text/javascript'></script>
+        
+        <!-- Scrolling Nav JavaScript -->
+        <script src='js/jquery.easing.min.js'></script>
+        <script src='js/scrolling-nav.js'></script>
     </body>
 </html>

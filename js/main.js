@@ -17,9 +17,17 @@
         $('body').delay(2800).css({'overflow':'visible'}); // dopóki #preloader jest widoczny nie ma możliwości przewijania strony
     
     /*-------------------------------*/
-    /*     Responsive Image-Map      */
+    /*           Google Map          */
     /*-------------------------------*/
     
+    var map;
     
-    
+    function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: -34.397, lng: 150.644},
+            zoom: 8
+        });
+    }
 }(jQuery);
+
+

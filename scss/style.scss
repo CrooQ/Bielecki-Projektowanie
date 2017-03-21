@@ -9,7 +9,7 @@
 body {
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
-    margin: 0;
+    
 }
 body,
 html {
@@ -30,7 +30,7 @@ header {
     
 }
 
-.header-logo {
+.header-logo{
     
     display: flex;
     align-items: center;
@@ -120,11 +120,6 @@ header {
     margin:-250px 0 0 -250px;
 
 }
-/*-------------------------------*/
-/*          Image-Map            */
-/*-------------------------------*/
-
-
 
 /*---------------------------------------------------------------*/
 /*                            SECTIONS                           */
@@ -159,13 +154,49 @@ section.image, header.image{
     background-image: url(../images/StockSnap_42H3JH8QI5.jpg);
 }
 
+.page-header{
+    margin-top: 60px; 
+}
 
 /*-------------------------------*/
 /*            Kontakt            */
 /*-------------------------------*/
 
-#map{
-    width: 100%;
-    height: 350px;
+#map, .map-row{
+    width: $full-width;
+    height: 450px;
     
+}
+
+
+
+.kontakt{
+    margin: 50px auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.adress{
+    font-size: 2rem;
+    line-height: 100%;
+}
+
+.btn-silver{
+    background: #e6e6e6;
+    border-color: #ccc;
+    color: #777;
+
+
+    &:hover,
+    &.hover,
+    &:active,
+    &.active,
+    &:focus,
+    &.focus{
+        background: #d2d2d2;
+    }
+}
+
+.btn, .text-muted{
+    margin-left: 14px;
 }

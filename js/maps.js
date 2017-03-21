@@ -1,6 +1,6 @@
 $(function() {
     
-    var styles = [
+    var silver_map = [
         {
             "elementType": "geometry",
             "stylers": [{
@@ -107,22 +107,61 @@ $(function() {
                 }]
         }];
     
-    $('#map').googleMap({
+  
+    $(function initMap() {
     
-        zoom: 14, // Powiększenie mapy
-        type: 'ROADMAP', // Typ Mapy
+        var position = {lat: 50.990741, lng: 17.218622};
+        var map = new
+        google.maps.Map(document.getElementById('map'), {
+            center: {lat: 50.988541, lng: 17.218662},  //position,
+            scrollwheel: false,
+            zoom: 15,
+            //disableDefaultUI: true,
+            styles: silver_map,
+        });
         
         
-    });
-    
-   //$('#map').setOptions({styles: styles});
+        var image = '../images/google_marker.png';
+        var greyMarker = new google.maps.Marker({
+            position: position,
+            animation: google.maps.Animation.BOUNCE,
+            map: map,
+            icon: image
+        });
         
-    $('#map').addMarker({
+        var  pathWroclaw = [
+            {lat: 50.988748, lng: 17.214684}, // road 94 from Wrocław
+            {lat: 50.987387, lng: 17.216915}, // crossroad 94 and Cicha
+            {lat: 50.989690, lng: 17.218988}, // turn to posesion
+            {lat: 50.989960, lng: 17.218273}, // private road
+            {lat: 50.990149, lng: 17.218246}, // private road
+            {lat: 50.990770, lng: 17.218745} // destination point
+        ];
         
-        coords: [50.990741, 17.218622], // Pozycja znacznika
-    });
-    
+        var pathOlawa = [
+            {lat: 50.986421, lng: 17.218611}, // road 94 from Oława
+            {lat: 50.987387, lng: 17.216915}, // crossroad 94 and Cicha
+        ];
+        var pathFromWroclaw = new google.maps.Polyline({
+            path: pathWroclaw,
+            geodesic: true,
+            strokeColor: '#b5b5b5',
+            strokeOpacity: 0.8,
+            strokeWeight: 3
+        });
+
+        pathFromWroclaw.setMap(map);
+        
+        var pathFromOlawa = new google.maps.Polyline({
+            path: pathOlawa,
+            geodesic: true,
+            strokeColor: '#b5b5b5',
+            strokeOpacity: 0.8,
+            strokeWeight: 3
+        });
+
+        pathFromOlawa.setMap(map);
+    })
     
 })
-
 

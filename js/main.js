@@ -17,6 +17,19 @@
         $('body').delay(2800).css({'overflow':'visible'}); // dopóki #preloader jest widoczny nie ma możliwości przewijania strony
     
     
+    /*-------------------------------*/
+    /*          Animations           */
+    /*-------------------------------*/
+    
+    $('*[data-animate]').addClass('hideAnimation').each(function(){
+        $(this).viewportChecker({
+            classToAdd: 'showAnimation animated ' + $(this).data('animate'),
+            classToRemove: 'hideAnimation',
+            offset: '30%'
+        });
+    });
+    
+    
 }(jQuery);
 
 
